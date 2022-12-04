@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.content-main {
+    max-width: 1000px;
+    margin: 34px 0 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img-mobile {
+    position: relative;
+    left: 8px;
+}
+
+.img-mobile{
+    max-width: 500px;
+}
+
+/* screenshot mobile */
+.screenshot-image {
+    position: absolute;
+    top: 26px;
+    width: 250px;
+    left: 156px;
+    opacity: 0;
+}
+
+.screenshot-1 {
+    opacity: 1;
+    transition: 1,5s opacity ease-in-out;
+    visibility: visible;
+    z-index: 2;
+}
+
+.contenedor-contenido {
+    max-width: 21.7rem;
+    margin-bottom: 45px;
+}
+
+/* Primera tarjeta */
+
+.content-img-instagram {
+    cursor: pointer;
+    text-align: center;
+    margin: 35px 0 30px 0;
+}
+
+.text-img-instragram {
+    width: 185px;
+}
+
+.content-target {
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 1px;
+    padding: 0 40px 40px 40px;
+    background-color: white;
+    height: 25.5rem;
+
+}
+
+.contenido-formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+#input-usuario, #input-contraseña {
+    width: 265px;
+    padding: 11px 9px;
+    border: 1px solid rgb(211, 209, 209);
+    margin: 3px 0;
+    font-size: 11px;
+    border-radius: 3px;
+    outline: none;
+    background-color: rgb(250, 250, 250);
+}
+
+::placeholder{ 
+    color: rgb(139, 138, 138);
+}
+
+#button-login {
+    width: 265px;
+    margin: 10px 0;
+    padding: 7px 0;
+    border: none;
+    background-color: rgba(72, 179, 255, 0.432);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.linear-content {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.circulo-page {
+    font-size: 17px;
+    color: rgb(157, 157, 157);
+}
+
+.linear {
+    border-top: 1px solid rgb(211, 209, 209);
+    width: 100%;
+}
+
+.content-facebook {
+    display: flex;
+    gap: 9px;
+    margin: 30px 0 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-facebook{
+    width: 16px;
+    display: block;
+}
+
+.direccion-facebook {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#385185;
+}
+
+.content-contraseña {
+    text-align: center;
+}
+
+.pregunta-contraseña {
+    font-size: 13px;
+    text-decoration: none;
+    color:#385185;
+}
+
+/* registrar usuario (segunda tarjeta) */
+
+.content-target-registro { 
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(211, 209, 209);
+    margin: 9px 0;
+    border-radius: 1px;
+    justify-content: center;
+}
+
+.content-registro{ 
+    display: flex;
+    padding: 20px 0;
+    gap: 5px;
+    align-items: center;
+}
+
+.pregunta-cuenta {
+    font-size: 13px;
+}
+
+.direccion-registrar {
+    text-decoration: none;
+    color: #0074cc;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* target descargas */
+.content-target-descargas {
+    text-align: center;
+}
+
+.text-descargar-app {
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.content-img-app {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icon-googleplay{
+    width: 132px;
+    cursor: pointer;
+}
+
+.icon-microsoft{
+    width: 109px;
+    cursor: pointer;
+}
+
+/* contenido footer */  
+.content-footer-general {
+    padding: 15px 0 40px 0;
+}
+
+.content-elemento-footer, .content-elemento-ic{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.content-elemento-ic{
+    margin: 20px ;
+}
+
+.content-footer-general li, a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    color:#8e8e8e;
+}
+
+.linear-bottom:hover {
+    text-decoration: underline #385185;
+}
