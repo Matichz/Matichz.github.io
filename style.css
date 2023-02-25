@@ -30,20 +30,36 @@ body {
     max-width: 500px;
 }
 
+
 /* screenshot mobile */
-.screenshot-image {
+.image-screenshot {
+    height: 34rem;
+    width: 16rem;
+    background-image: url(/image/screenshot1.png);
+    background-repeat: no-repeat;
+    background-size: 249px;
     position: absolute;
-    top: 26px;
-    width: 250px;
-    left: 156px;
-    opacity: 0;
+    top: 28.3px;
+    left: 157px;
+    animation: screenshot 20s linear alternate infinite;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 
-.screenshot-1 {
-    opacity: 1;
-    transition: 1,5s opacity ease-in-out;
-    visibility: visible;
-    z-index: 2;
+
+@keyframes screenshot {
+    0%{
+        background-image: url(/image/screenshot1.png);
+    }
+    25%{
+        background-image: url(/image/screenshot2.png);
+    }
+    50%{
+        background-image: url(/image/screenshot3.png);
+    }
+    75%{
+        background-image: url(/image/screenshot4.png);
+    }
 }
 
 .contenedor-contenido {
@@ -95,13 +111,13 @@ body {
 #button-login {
     width: 265px;
     margin: 10px 0;
-    padding: 7px 0;
+    padding: 8px 0;
     border: none;
-    background-color: rgba(72, 179, 255, 0.432);
+    background-color: rgb(72, 179, 255);
     color: white;
     font-size: 13px;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 7px;
 }
 
 .linear-content {
@@ -124,7 +140,7 @@ body {
 .content-facebook {
     display: flex;
     gap: 9px;
-    margin: 30px 0 15px 0;
+    margin: 30px 0 17px 0;
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +162,7 @@ body {
 }
 
 .pregunta-contraseña {
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     color:#385185;
 }
@@ -175,7 +191,7 @@ body {
 
 .direccion-registrar {
     text-decoration: none;
-    color: #0074cc;
+    color: #0095f6;
     font-weight: bold;
     font-size: 13px;
 }
